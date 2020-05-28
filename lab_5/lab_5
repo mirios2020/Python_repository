@@ -1,0 +1,15 @@
+import numpy as np
+while True:
+    n = int(input('Enter integer number (value > 0): '))
+    if n > 0: break
+vector = np.arange(0, n)
+print(vector)
+sum_even_numbers = 0
+sum_odd_numbers = 0
+iteration = 0
+while iteration < n:
+    if vector[iteration] % 2 == 0: sum_even_numbers += vector[iteration]
+    else: sum_odd_numbers += vector[iteration]
+    iteration += 1
+print(sum_even_numbers)
+print(sum_odd_numbers)
